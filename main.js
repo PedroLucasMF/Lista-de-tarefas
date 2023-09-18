@@ -30,18 +30,31 @@ listaTarefas.addEventListener('click',(elemento) =>{
         }
         
     })
-function criarTarefa (valorTarefa){
-    const li = document.createElement('li')
 
-    li.innerHTML = `<p>${valorTarefa}</p>
+
+function criarTarefa (valorTarefa){
+const lista = document.createElement('li')
+    lista.innerHTML = `<p>${valorTarefa}</p>
     <div>
     <button class="excluir">❌</button>
     <button class="concluir">✔️</button></div>`
-    return li
+    return lista
 }
 function renderizarTarefa(tarefa){
      const listaTarefas = document.querySelector('ul')
      listaTarefas.appendChild(tarefa)
  }
+
+ let itenslista = Array.from(caixa.children)
+
+ for (let i = 0; i < itenslista.length; i++){
+    item[i] = itenslista[i].innerHTML
+    console.log(item)
+ }
+
+ console.log(itenslista)
+
+
+
 
 
